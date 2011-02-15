@@ -5,13 +5,14 @@ gem 'rails', '3.0.4'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.2.6'
+gem 'mysql2',       '0.2.6'
 gem 'jquery-rails', '0.2.7'
+gem 'simple_form',  '1.3.1'
 
 group :development, :test do
-  gem 'rspec-rails', '2.5.0'
-  gem 'steak', '1.1.0'
-  gem 'capybara', '0.4.1.2'
+  gem 'rspec-rails',  '2.5.0'
+  gem 'steak',        '1.1.0'
+  gem 'capybara',     '0.4.1.2'
 
   # Other usual suspects:
   # gem 'delorean'
