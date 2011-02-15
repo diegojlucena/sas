@@ -6,7 +6,7 @@ gem 'rails', '3.0.4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '0.2.6'
-
+gem 'jquery-rails', '0.2.7'
 
 group :development, :test do
   gem 'rspec-rails', '2.5.0'
