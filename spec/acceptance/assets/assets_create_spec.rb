@@ -17,7 +17,7 @@ feature "Criar Ativos", %q{
     
     click_button 'Criar Ativo'
     
-    current_path.should math %{/people/\d+}
+    current_path.should match %r{/assets/\d+}
   end
   
   scenario "usuário inválido" do
@@ -30,8 +30,8 @@ feature "Criar Ativos", %q{
     fill_in "Valor", :with => -125.01
     
     click_button 'Criar Ativo'
-    
-    current_path.should math assets_path("new")
+    puts current_path
+    current_path.should match "/assets"
   end
   
 end

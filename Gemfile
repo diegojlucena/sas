@@ -15,6 +15,7 @@ group :development, :test do
   gem 'remarkable_activerecord',  '4.0.0.alpha4'
   gem 'steak',                    '1.1.0'  
   gem 'capybara',                 '0.4.1.2'
+  gem 'launchy',                  '0.3.7'
   gem 'factory_girl_rails',       '1.0.1'  
 
   # Other usual suspects:

@@ -8,12 +8,12 @@ feature "Novos de Ativos", %q{
 
   scenario "Acessando novo ativo" do
     visit assets_path("new")
-    page.should have_content("Código")
-    page.should have_content("Nome")
-    page.should have_content("Marca")
-    page.should have_content("Modelo")
-    page.should have_content("Valor")
-    page.should have_content("Criar Ativo")
+    page.should have_field("Código")
+    page.should have_field("Nome")
+    page.should have_field("Marca")
+    page.should have_field("Modelo")
+    page.should have_field("Valor")
+    page.should have_button("Criar Ativo")
   end
    
 end

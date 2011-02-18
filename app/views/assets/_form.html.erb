@@ -1,13 +1,13 @@
 <%= simple_form_for(@asset) do |f| %>
   <%= f.error_notification %>
 
-  <div class="inputs">
+  <ol class="inputs">
     <%= f.input :code %>
     <%= f.input :name %>
     <%= f.input :brand %>
     <%= f.input :model %>
     <%= f.input :buy_price %>
-  </div>
+  </ol>
 
   <div class="actions">
     <%= f.button :submit %>
