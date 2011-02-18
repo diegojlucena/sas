@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20110215184032) do
     t.string   "name"
     t.string   "brand"
     t.string   "model"
-    t.decimal  "buy_price",  :precision => 8, :scale => 2, :default => 0.0
+    t.decimal  "buy_price",  :precision => 8, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end

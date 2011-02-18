@@ -5,7 +5,7 @@ class CreateAssets < ActiveRecord::Migration
       t.string :name
       t.string :brand
       t.string :model
-      t.decimal :buy_price, :precision => 8, :scale => 2, :default => 0.0
+      t.decimal :buy_price, :precision => 8, :scale => 2
 
       t.timestamps
     end

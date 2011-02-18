@@ -9,11 +9,11 @@ feature "Editar Ativos", %q{
   scenario "Acessando ativo" do
     asset = Factory.create(:valid_asset)
     visit assets_path(asset.to_param)
-    page.should have_content(asset.code)
+    page.should have_content(asset.code.to_s)
     page.should have_content(asset.name)
     page.should have_content(asset.brand)
     page.should have_content(asset.model)
-    page.should have_content(asset.buy_price)
+    page.should have_content(asset.buy_price.to_s)
     page.should have_content("Atualizar Ativo")
   end
    
