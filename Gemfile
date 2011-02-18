@@ -10,10 +10,12 @@ gem 'jquery-rails', '0.2.7'
 gem 'simple_form',  '1.3.1'
 
 group :development, :test do
-  gem 'rspec-rails',        '2.5.0'
-  gem 'steak',              '1.1.0'
-  gem 'capybara',           '0.4.1.2'
-  gem 'factory_girl_rails', '1.0.1'
+  gem 'rspec',                    '2.5.0'
+  gem 'rspec-rails',              '2.5.0'
+  gem 'remarkable_activerecord',  '4.0.0.alpha4'
+  gem 'steak',                    '1.1.0'  
+  gem 'capybara',                 '0.4.1.2'
+  gem 'factory_girl_rails',       '1.0.1'  
 
   # Other usual suspects:
   # gem 'delorean'
