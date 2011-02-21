@@ -1,5 +1,7 @@
 /*=Typography*/
 
+@import "mixins";
+
 html{font-size:0.625em; height:100%;}
 body{font-family:Arial,Helvetica,sans-serif;}
 
@@ -25,11 +27,29 @@ a { color:#000; text-decoration:none; }
 a:hover { text-decoration: underline; }
 
 table { margin-bottom:1.625em; border-collapse: collapse; width:100%;}
-th { font-weight:bold; }
+th { 
+	font-weight:bold;
+	color:#666;
+	border:1px solid silver; 
+	text-align:left;
+	text-overflow: ellipsis;
+	line-height: 12px;
+	text-shadow:0 1px 0 #fff;
+	@include linear-gradient;
+}
 tr:nth-child(odd){
 	background-color:#efefef;
 }
-tr,th,td { margin:0; padding:0 1.625em 0 1em;}
+tr,th,td { 
+	margin:0; 
+	padding:0.5em 
+	1.625em 0.5em 1em;
+}
+
+tbody>tr:hover{
+	cursor:pointer;
+	background-color:#fadbad;
+}
 tfoot { font-style: italic; }
 caption { text-align:center;}
 hr {

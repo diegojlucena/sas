@@ -1,8 +1,9 @@
 /*LAYOUT*/
+@import "mixins";
 
 body {
 	margin: 0;
-	padding:44px 0 30px 200px;
+	padding:42px 0 0 202px;
 }
 
 header#app{
@@ -13,7 +14,8 @@ header#app{
 	background:none repeat scroll 0 0 #3D3D3D;
 	border-bottom:solid 1px #000;
 	color:#FFF ;
-	height:40px;
+	height:38px;
+	z-index:1; 
 	
 	a#logo{
 		color:#FFF ;
@@ -23,21 +25,9 @@ header#app{
 	}
 }
 
-footer#app {
-	bottom: 0; 
-	height: 30px;
-	position: absolute;
-	width:100%;
-	p{text-align:center;}
-	margin-left:-200px;
-	background:#FFF;
-	border-top:1px solid #DDD;
-}
-
-
 section#side_bar {
 	position:absolute;
-	top:41px;
+	top:39px;
   left:0;
 	width:200px;
 	height:100%;
@@ -84,9 +74,6 @@ section#side_bar {
   body>section#side_bar{
    position:fixed;
   }
-	body>footer#app{
-   position:fixed;
-  }
  }
 
 * html body{
@@ -98,6 +85,12 @@ section#side_bar {
 }
 
 section#app_body{
-	padding:5px;
+	header{
+		padding:5px 15px;
+		@include linear-gradient;
+		h1{
+			margin-bottom:5px;
+		}
+	}
 }
 

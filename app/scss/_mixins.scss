@@ -1,0 +1,35 @@
+/*== Mixins*/
+
+/*Rounded Corners*/
+@mixin border-radius ($radius: 3px) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+ 
+/*Box Shadow*/
+@mixin box-shadow ($hor: 3px, $vert: 2px, $blur: 5px, $shadow: #757171) {
+	-webkit-box-shadow: $hor $vert $blur $shadow;
+	-moz-box-shadow: $hor $vert $blur $shadow;
+	box-shadow: $hor $vert $blur $shadow;
+}
+ 
+/*Transition*/
+@mixin transition ($range: all, $time: 1s, $ease: ease-in-out) {
+	-moz-transition: $range $time $ease;
+	-webkit-transition: $range $time $ease;
+	-o-transition: $range $time $ease;
+	transition: $range $time $ease;
+}
+
+@mixin linear-gradient ($fromcolor: #FFFFFF, $tocolor:#EDEDED){
+	background: -webkit-gradient(linear, left top, left bottom, from($fromcolor), to($tocolor));
+  background: -moz-linear-gradient(top, $fromcolor,$tocolor);
+}
+
+@mixin transform-rotate($degrees:45deg){
+	-webkit-transform:rotate($degrees);
+  -moz-transform:rotate($degrees);
+  -o-transform:rotate($degrees);
+  -transform:rotate($degrees);
+}

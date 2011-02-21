@@ -1,0 +1,45 @@
+/*BUTTONS STYLES*/
+@import "colors";
+@import "mixins";
+
+button, a.button {
+		background: #ddd;
+		border: 1px solid #ccc;
+  	color: $default-font-color;
+    cursor:pointer;
+    display: inline-block;
+    font-size:12px;
+		font-weight:bold;
+    outline: none;
+    padding: 4px 10px;
+    position:relative;
+  	text-decoration: none;    
+  	
+/*css3 mixins*/
+  	@include border-radius;
+  	@include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+		@include linear-gradient;
+  	text-shadow: #fff 0px 1px 0px;
+
+		&:hover, &:focus {
+		  color:$hover-font-color;
+			@include linear-gradient(#FFF, #EEE );
+		}
+		
+		&:active {
+			position: relative;
+			left: 1px;
+			top: 1px;
+			color:$active-font-color;
+			@include box-shadow( 0px, 0px, 0px, rgba(0,0,0,.5));
+			@include linear-gradient(#EEE, #FFF );
+		}
+		
+		&:before,&:after{
+			content:"";
+	    position:absolute;
+	    top:50%;
+	    left:0;
+			@include box-shadow( 0px, 1px, 0px, #FFF);
+		}
+}
