@@ -1,6 +1,12 @@
-<h1>Editing asset</h1>
-
+<header>
+  <h1>Editando Ativo</h1>
+  <div id="list_controls">
+    <ul class="left">
+      <li>
+        <%= link_to 'Voltar para lista de Ativos', assets_path, :class => "back" %>
+      </li>
+    </ul>
+  </div>
+</header>
 <%= render 'form' %>
 
-<%= link_to 'Show', @asset %> |
-<%= link_to 'Back', assets_path %>

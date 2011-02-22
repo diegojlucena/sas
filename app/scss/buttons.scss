@@ -2,7 +2,7 @@
 @import "colors";
 @import "mixins";
 
-button, a.button {
+button, a.button, input.button{
 		background: #ddd;
 		border: 1px solid #ccc;
   	color: $default-font-color;

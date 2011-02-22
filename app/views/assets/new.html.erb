@@ -1,5 +1,12 @@
-<h1>New asset</h1>
+<header>
+  <h1>Novo Ativo</h1>
+  <div id="list_controls">
+    <ul class="left">
+      <li>
+        <%= link_to 'Voltar para lista de Ativos', assets_path, :class => "back"  %>
+      </li>
+    </ul>
+  </div>
+</header>
 
 <%= render 'form' %>
-
-<%= link_to 'Back', assets_path %>

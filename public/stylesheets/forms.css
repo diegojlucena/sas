@@ -1,0 +1,126 @@
+/*=forms*/
+/*== Mixins*/
+/*Rounded Corners*/
+/*Box Shadow*/
+/*Transition*/
+.simple_form ol {
+  padding-top: 10px;
+  margin-bottom: 20px; }
+.simple_form label {
+  width: 130px;
+  display: inline-block;
+  text-align: right;
+  float: none;
+  padding: 2px;
+  color: #333; }
+.simple_form label.checkbox {
+  width: 255px;
+  display: inline-block;
+  text-align: left;
+  margin-left: 135px; }
+.simple_form input[attr^="submit"], .simple_form select, .simple_form textarea {
+  border-color: #666 #ccc #ccc;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px;
+  width: 255px; }
+.simple_form textarea.full {
+  width: 385px;
+  margin-left: 10px; }
+.simple_form select {
+  width: 263px; }
+.simple_form input[attr^="submit"]:focus, .simple_form select:focus, .simple_form textarea:focus {
+  border-color: #9df090;
+  -webkit-box-shadow: 0px 0px 5px #9df090;
+  -moz-box-shadow: 0px 0px 5px #9df090;
+  box-shadow: 0px 0px 5px #9df090; }
+.simple_form label input {
+  width: auto;
+  margin-right: 1em; }
+.simple_form abbr {
+  cursor: help;
+  font-weight: bold;
+  color: #dd3333; }
+.simple_form li {
+  clear: both;
+  margin: 0 0 .5em;
+  padding: 0;
+  position: relative; }
+.simple_form .radio, .simple_form .multiple {
+  margin-left: 135px;
+  position: relative; }
+.simple_form .radio legend, .simple_form .multiple legend {
+  margin: 0;
+  padding: 0; }
+.simple_form .radio legend span, .simple_form .multiple legend span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: right;
+  width: 130px;
+  padding: 0px 2px;
+  color: #333;
+  position: absolute;
+  border-bottom: none;
+  top: 0;
+  left: -135px; }
+.simple_form .radio .related li, .simple_form .multiple .related li {
+  clear: both;
+  float: none;
+  margin: 0 0 .5em;
+  width: auto; }
+.simple_form .radio label, .simple_form .multiple label {
+  display: inline;
+  width: auto; }
+.simple_form .radio label input, .simple_form .multiple label input {
+  background: transparent;
+  width: auto; }
+.simple_form .radio ul, .simple_form .multiple ul {
+  font-size: 1em;
+  line-height: 1.5; }
+.simple_form .radio ul li, .simple_form .multiple ul li {
+  margin: 0; }
+.simple_form .multiple li {
+  float: none;
+  display: inline-block; }
+.simple_form .multiple li label {
+  display: block;
+  text-align: left; }
+.simple_form .multiple li select {
+  width: 131.5px; }
+.simple_form input[type="submit"] {
+  margin-left: 135px; }
+
+/*error*/
+.error_notification {
+  background: #ffdfdf;
+  border-bottom: 1px solid red;
+  border-top: 2px solid red;
+  color: #333;
+  margin: 0;
+  padding: 10px; }
+
+span.error {
+  color: red;
+  position: relative;
+  width: auto;
+  padding-left: 18px; }
+
+li.field_with_errors input, li.field_with_errors select, li.field_with_errors textarea {
+  border: 1px solid red;
+  background: #ffdfdf;
+  -webkit-box-shadow: 0px 0px 5px red;
+  -moz-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red; }
+li.field_with_errors input:focus, li.field_with_errors select:focus, li.field_with_errors textarea:focus {
+  border: 1px solid #cccb00;
+  -webkit-box-shadow: 0px 0px 5px #cccb00;
+  -moz-box-shadow: 0px 0px 5px #cccb00;
+  box-shadow: 0px 0px 5px #cccb00;
+  background: #fff; }
+
+span.hint {
+  max-width: 340px;
+  padding: 5px 5px 5px 23px;
+  background-color: #fff5bd;
+  font-color: #BBB; }

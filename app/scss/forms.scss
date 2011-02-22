@@ -1,0 +1,173 @@
+/*=forms*/
+
+@import "mixins";
+
+
+.simple_form {		
+	ol{
+		padding-top:10px;
+		margin-bottom:20px;
+	}
+	
+	label{
+		width:130px;
+		display:inline-block;
+		text-align:right;
+		float: none;
+		padding: 2px;
+		color:#333;
+	}
+	
+	label.checkbox{
+		width:255px;
+		display:inline-block;
+		text-align:left;
+		margin-left:135px;
+	}
+	
+	input[attr^="submit"], select, textarea{ 
+		border-color:#666 #ccc #ccc;
+		border-style:solid;
+		border-width:1px;
+		padding:2px;
+		width:255px;
+	}
+	
+	textarea.full{
+		width:385px;
+		margin-left:10px;
+	}
+	
+	select{
+		width:263px;
+	}
+	
+	input[attr^="submit"]:focus, select:focus, textarea:focus{
+		border-color: #9df090;
+		@include box_shadow(0px, 0px, 5px, #9df090);
+	}
+	
+	label input{
+		width:auto;
+		margin-right:1em;
+	}
+	
+	abbr{
+		cursor:help;
+		font-weight:bold;
+		color:#dd3333;
+	}
+	
+	li{ 
+		clear: both; 
+		margin: 0 0 .5em; 
+		padding: 0;
+		position:relative;
+	}
+
+	
+	.radio, .multiple {
+		margin-left: 135px;
+		position: relative;
+		legend{
+			margin:0;
+			padding:0;
+			span{
+				display: block; 
+				font-size:12px;
+				line-height: 1.5; 
+				text-align: right; 
+				width:130px;
+				padding: 0px 2px;
+				color:#333;
+				position: absolute; 
+				border-bottom:none;
+				top:0;
+				left:-135px;
+			}
+		}
+		
+		.related {
+			li { clear: both; float: none; margin: 0 0 .5em; width: auto;}
+		}
+			
+		
+		label{
+			display:inline;
+			width:auto;
+			
+			input{
+				background: transparent;
+				width: auto;
+			}
+		}
+		
+		ul{
+			font-size:1em;
+			line-height:1.5;
+			
+			li{
+				margin: 0;
+			}
+			
+		}
+	}
+	
+	
+	.multiple{
+		li{
+			float:none;
+			display:inline-block;
+			
+			label{
+				display:block;
+				text-align:left;
+			}
+			
+			select{width:131.5px;}
+		}
+	}
+	
+	input[type="submit"]{
+		margin-left:135px;
+	}
+	
+}
+
+/*error*/
+
+.error_notification { 
+	background: #ffdfdf; 
+	border-bottom: 1px solid red; 
+	border-top: 2px solid red; 
+	color: #333; 
+	margin:0; 
+	padding: 10px;
+}
+
+span.error {
+	color:red;
+	position:relative;
+	width:auto;
+  padding-left: 18px;
+}
+
+
+li.field_with_errors input, li.field_with_errors select, li.field_with_errors textarea{
+	border: 1px solid red;
+	background: #ffdfdf;
+	@include box_shadow(0px, 0px, 5px, red);
+	
+	&:focus{
+		border: 1px solid #cccb00;
+		@include box_shadow(0px, 0px, 5px, #cccb00);
+		background: #fff;
+	}
+}
+
+span.hint{
+	max-width:340px;
+	padding:5px 5px 5px 23px;
+	background-color:#fff5bd;
+	font-color:#BBB;
+}

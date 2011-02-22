@@ -49,6 +49,7 @@ section#side_bar {
 			margin:0 5px;
 			padding:1px 0 2px 25px;
 			text-decoration:none;
+			color:#000;
 		}
 
 		a:hover{
@@ -85,12 +86,16 @@ section#side_bar {
 }
 
 section#app_body{
+	
 	header{
 		padding:5px 15px;
 		@include linear-gradient;
 		h1{
 			margin-bottom:5px;
 		}
+		
+		a{font-weight:bold;}
+		a.back:before{content:"<< ";}
 	}
 }
 

@@ -1,1 +1,79 @@
-body{margin:0;padding:42px 0 0 202px}header#app{position:absolute;top:0;left:0;width:100%;background:none repeat scroll 0 0 #3D3D3D;border-bottom:solid 1px #000;color:#FFF;height:38px;z-index:1}header#app a#logo{color:#FFF;font-size:3.6em;text-decoration:none;margin-left:30px}section#side_bar{position:absolute;top:39px;left:0;width:200px;height:100%;padding:1px;border-right:1px solid #DDD}section#side_bar nav#main_nav{border-bottom:1px solid #DDD;padding:5px 0 5px 0;margin-bottom:6px}section#side_bar nav#main_nav li{padding-right:5px}section#side_bar nav#main_nav a{display:block;cursor:pointer;margin:0 5px;padding:1px 0 2px 25px;text-decoration:none}section#side_bar nav#main_nav a:hover{background-color:#eee;text-shadow:0 1px 0 #fff}section#side_bar nav#main_nav li.selected a{background-color:#e7e7e7;text-indent:5px;font-weight:bold;text-shadow:0 1px 0 #fff}@media screen{body > header#app{position:fixed}body > section#side_bar{position:fixed}}* html body{overflow:hidden}* html section#app_body{height:100%;overflow:auto}section#app_body header{padding:5px 15px;background:-webkit-gradient(linear, left top, left bottom, from(white), to(#ededed));background:-moz-linear-gradient(top, white, #ededed)}section#app_body header h1{margin-bottom:5px}
+/*LAYOUT*/
+/*== Mixins*/
+/*Rounded Corners*/
+/*Box Shadow*/
+/*Transition*/
+body {
+  margin: 0;
+  padding: 42px 0 0 202px; }
+
+header#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none repeat scroll 0 0 #3D3D3D;
+  border-bottom: solid 1px #000;
+  color: #FFF;
+  height: 38px;
+  z-index: 1; }
+header#app a#logo {
+  color: #FFF;
+  font-size: 3.6em;
+  text-decoration: none;
+  margin-left: 30px; }
+
+section#side_bar {
+  position: absolute;
+  top: 39px;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding: 1px;
+  border-right: 1px solid #DDD; }
+section#side_bar nav#main_nav {
+  border-bottom: 1px solid #DDD;
+  padding: 5px 0 5px 0;
+  margin-bottom: 6px; }
+section#side_bar nav#main_nav li {
+  padding-right: 5px; }
+section#side_bar nav#main_nav a {
+  display: block;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 1px 0 2px 25px;
+  text-decoration: none;
+  color: #000; }
+section#side_bar nav#main_nav a:hover {
+  background-color: #eee;
+  text-shadow: 0 1px 0 #fff; }
+section#side_bar nav#main_nav li.selected a {
+  background-color: #e7e7e7;
+  text-indent: 5px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #fff; }
+
+@media screen {
+  body > header#app {
+    position: fixed; }
+
+  body > section#side_bar {
+    position: fixed; } }
+
+* html body {
+  overflow: hidden; }
+
+* html section#app_body {
+  height: 100%;
+  overflow: auto; }
+
+section#app_body header {
+  padding: 5px 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ededed));
+  background: -moz-linear-gradient(top, white, #ededed); }
+section#app_body header h1 {
+  margin-bottom: 5px; }
+section#app_body header a {
+  font-weight: bold; }
+section#app_body header a.back:before {
+  content: "<< "; }
