@@ -88,6 +88,7 @@ section#side_bar {
 section#app_body{
 	
 	header{
+		height:55px;
 		padding:5px 15px;
 		@include linear-gradient;
 		h1{
@@ -98,7 +99,7 @@ section#app_body{
 		a.back:before{content:"<< ";}
 		
 		div#list_controls{
-			li{display:inline;margin-right:5px;}
+			li{display:inline-block;margin-right:5px;height:30px;}
 		}
 	}
 	
