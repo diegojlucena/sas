@@ -6,14 +6,14 @@
 /*Transition*/
 button, a.button, input.button {
   background: #ddd;
-  border: 1px solid #ccc;
+  border: 1px solid #b7b7b7;
   color: #333333;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
   outline: none;
-  padding: 4px 10px;
+  padding: 3px 9px;
   position: relative;
   text-decoration: none;
   /*css3 mixins*/
@@ -27,19 +27,18 @@ button, a.button, input.button {
   background: -moz-linear-gradient(top, white, #ededed);
   text-shadow: #fff 0px 1px 0px; }
 button:hover, button:focus, a.button:hover, a.button:focus, input.button:hover, input.button:focus {
-  color: #336699;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
-  background: -moz-linear-gradient(top, white, #eeeeee); }
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dcdcdc));
+  background: -moz-linear-gradient(top, white, #dcdcdc);
+  text-shadow: 0 1px 0 #fff; }
 button:active, a.button:active, input.button:active {
   position: relative;
   left: 1px;
   top: 1px;
-  color: #225588;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(white));
-  background: -moz-linear-gradient(top, #eeeeee, white); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#dcdcdc), to(white));
+  background: -moz-linear-gradient(top, #dcdcdc, white); }
 button:before, button:after, a.button:before, a.button:after, input.button:before, input.button:after {
   content: "";
   position: absolute;

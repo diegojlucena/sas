@@ -91,6 +91,11 @@
 .simple_form input[type="submit"] {
   margin-left: 135px; }
 
+div.actions {
+  font-size: 1.3em; }
+div.actions a {
+  font-weight: bold; }
+
 /*error*/
 .error_notification {
   background: #ffdfdf;

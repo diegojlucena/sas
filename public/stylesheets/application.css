@@ -77,3 +77,19 @@ section#app_body header a {
   font-weight: bold; }
 section#app_body header a.back:before {
   content: "<< "; }
+section#app_body header div#list_controls li {
+  display: inline;
+  margin-right: 5px; }
+section#app_body dl dt:after {
+  content: ":"; }
+section#app_body dl dt {
+  color: #333;
+  float: left;
+  padding: 5px;
+  width: 160px;
+  text-align: right; }
+section#app_body dl dd {
+  margin: 2px 0 2px 170px;
+  padding: 5px 0;
+  min-height: 1.2em;
+  display: block; }
