@@ -66,48 +66,21 @@
 	}
 
 	
-	.radio, .multiple {
-		margin-left: 135px;
-		position: relative;
-		legend{
-			margin:0;
-			padding:0;
-			span{
-				display: block; 
-				font-size:12px;
-				line-height: 1.5; 
-				text-align: right; 
-				width:130px;
-				padding: 0px 2px;
-				color:#333;
-				position: absolute; 
-				border-bottom:none;
-				top:0;
-				left:-135px;
-			}
-		}
-		
-		.related {
-			li { clear: both; float: none; margin: 0 0 .5em; width: auto;}
-		}
-			
-		
-		label{
-			display:inline;
-			width:auto;
-			
-			input{
-				background: transparent;
-				width: auto;
-			}
-		}
+	li.radio{
 		
 		ul{
 			font-size:1em;
 			line-height:1.5;
+			width:279px;
+			display:inline-block;
 			
 			li{
 				margin: 0;
+				label.collection_radio{
+					text-align:left;
+					width:277px;
+					padding:0;
+				}
 			}
 			
 		}

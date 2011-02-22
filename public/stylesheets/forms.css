@@ -46,40 +46,17 @@
   margin: 0 0 .5em;
   padding: 0;
   position: relative; }
-.simple_form .radio, .simple_form .multiple {
-  margin-left: 135px;
-  position: relative; }
-.simple_form .radio legend, .simple_form .multiple legend {
-  margin: 0;
-  padding: 0; }
-.simple_form .radio legend span, .simple_form .multiple legend span {
-  display: block;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: right;
-  width: 130px;
-  padding: 0px 2px;
-  color: #333;
-  position: absolute;
-  border-bottom: none;
-  top: 0;
-  left: -135px; }
-.simple_form .radio .related li, .simple_form .multiple .related li {
-  clear: both;
-  float: none;
-  margin: 0 0 .5em;
-  width: auto; }
-.simple_form .radio label, .simple_form .multiple label {
-  display: inline;
-  width: auto; }
-.simple_form .radio label input, .simple_form .multiple label input {
-  background: transparent;
-  width: auto; }
-.simple_form .radio ul, .simple_form .multiple ul {
+.simple_form li.radio ul {
   font-size: 1em;
-  line-height: 1.5; }
-.simple_form .radio ul li, .simple_form .multiple ul li {
+  line-height: 1.5;
+  width: 279px;
+  display: inline-block; }
+.simple_form li.radio ul li {
   margin: 0; }
+.simple_form li.radio ul li label.collection_radio {
+  text-align: left;
+  width: 277px;
+  padding: 0; }
 .simple_form .multiple li {
   float: none;
   display: inline-block; }

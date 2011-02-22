@@ -14,6 +14,7 @@ feature "Criar Ativos", %q{
     fill_in "Marca", :with => "vivicam"
     fill_in "Modelo", :with => "digital 5024"
     fill_in "Valor", :with => 125.01
+    choose "Em manutenção" 
     
     click_button 'Criar Ativo'
     

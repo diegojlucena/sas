@@ -6,6 +6,9 @@
         <%= link_to 'Voltar para lista de Ativos', assets_path, :class => "back"  %>
       </li>
       <li>
+        <%= link_to 'Novo Ativo', new_asset_path, :class => 'button' %>
+      </li>
+      <li>
         <%= link_to 'Editar', edit_asset_path(@asset), :class => "button" %> 
       </li>
       <li>
@@ -17,6 +20,8 @@
 <dl>
   <dt>Nome</dt>
   <dd><%= @asset.name %></dd>
+  <dt>Situação</dt>
+  <dd><%= @asset.status %></dd>
   <dt>Marca</dt>
   <dd><%= @asset.brand %></dd>
   <dt>Modelo</dt>

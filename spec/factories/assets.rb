@@ -1,3 +1,4 @@
+#coding: utf-8
 Factory.sequence :code do |n|
   n 
 end
@@ -11,6 +12,7 @@ Factory.define :valid_asset, :class => Asset do |a|
   a.name {Factory.next(:name)}
   a.brand "brand"
   a.model "model"
+  a.status "Em manutenção"
 end
 
 Factory.define :invalid_asset, :class => Asset do |a|

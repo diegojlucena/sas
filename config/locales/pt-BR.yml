@@ -158,6 +158,7 @@ pt-BR:
         brand: "Marca"
         model: "Modelo"
         buy_price: "Valor de Compra"
+        status: "Situação"
     errors:
       template:
         header:

@@ -4,6 +4,7 @@
   <ol class="inputs">
     <%= f.input :code %>
     <%= f.input :name %>
+    <%= f.input :status, :collection => ['Danificado','Em uso','Em manutenção'], :as => :radio %>
     <%= f.input :brand %>
     <%= f.input :model %>
     <%= f.input :buy_price %>
