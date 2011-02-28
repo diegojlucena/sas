@@ -36,14 +36,19 @@ th {
 	line-height: 12px;
 	text-shadow:0 1px 0 #fff;
 	@include linear-gradient;
+	
+}
+
+td.edit, td.destroy {
+	width:30px;
+	padding:0.5em;
 }
 tr:nth-child(odd){
 	background-color:#efefef;
 }
 tr,th,td { 
 	margin:0; 
-	padding:0.5em 
-	1.625em 0.5em 1em;
+	padding:0.5em 1.625em 0.5em 1em;
 }
 
 tbody>tr:hover{

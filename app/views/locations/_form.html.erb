@@ -1,0 +1,12 @@
+<%= simple_form_for(@location) do |f| %>
+  <%= f.error_notification %>
+
+  <ol class="inputs">
+    <%= f.input :name %>
+    <%= f.input :parent_id, :collection => nested_set_options(Location, @location) {|i, level| "#{'-' * level} #{i.name}" } %>
+  </ol>
+
+  <div class="actions">
+    <%= f.button :submit %> ou <%= link_to "Cancelar", locations_path %>
+  </div>
+<% end %>

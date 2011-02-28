@@ -1,0 +1,31 @@
+<header>
+  <h1>Lista de Locais</h1>
+  <div id="list_controls">
+    <ul class="left">
+      <li>
+        <%= link_to 'Novo Local', new_location_path, :class => 'button' %>
+      </li>
+    </ul>
+  </div>
+</header>
+<div class="section_content">
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th colspan='2'>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @locations.each do |location| %>
+        <tr>
+          <td><%= location.name %></td>
+          <td class="edit"><%= link_to "Editar", edit_location_path(location) %></td>
+          <td class="destroy"><%= link_to("Apagar", location , :method => :delete, :confirm => "Tem certeza?") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+

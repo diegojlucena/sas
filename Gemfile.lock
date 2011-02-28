@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/skyeagle/nested_set.git
+  revision: 32c0d948cfccdb81324bc127daa3c5077d89be22
+  specs:
+    nested_set (1.6.4)
+      activerecord (>= 3.0.0)
+      railties (>= 3.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -133,6 +141,7 @@ DEPENDENCIES
   factory_girl_rails (= 1.0.1)
   launchy (= 0.3.7)
   mysql2 (= 0.2.6)
+  nested_set!
   rails (= 3.0.4)
   remarkable_activerecord (= 4.0.0.alpha4)
   rspec (= 2.5.0)

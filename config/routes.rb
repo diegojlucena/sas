@@ -1,6 +1,8 @@
 Sas::Application.routes.draw do
-  resources :assets
 
+
+  resources :assets
+  resources :locations, :except => :show
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
