@@ -7,7 +7,8 @@ describe "assets/new.html.erb" do
       :name => "MyString",
       :brand => "MyString",
       :model => "MyString",
-      :buy_price => "9.99"
+      :buy_price => "9.99",
+      :status => "Em Uso"
     ).as_new_record)
   end
 
@@ -20,6 +21,7 @@ describe "assets/new.html.erb" do
       assert_select "input#asset_name", :name => "asset[name]"
       assert_select "input#asset_brand", :name => "asset[brand]"
       assert_select "input#asset_model", :name => "asset[model]"
+      assert_select "input#asset_model", :name => "asset[status]"
       assert_select "input#asset_buy_price", :name => "asset[buy_price]"
     end
   end

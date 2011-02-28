@@ -7,7 +7,8 @@ feature "Criar Ativos", %q{
 } do
   
   scenario "usuário valido" do
-    visit assets_path("new")
+    visit assets_path
+    click_link "Novo Ativo"
     
     fill_in "Código", :with => 1234
     fill_in "Nome", :with => "Maquina Fotográfica"
@@ -19,10 +20,12 @@ feature "Criar Ativos", %q{
     click_button 'Criar Ativo'
     
     current_path.should match %r{/assets/\d+}
+    page.should have_content("Ativo criado com sucesso.")
   end
   
   scenario "usuário inválido" do
-    visit assets_path("new")
+    visit assets_path
+    click_link "Novo Ativo"
     
     fill_in "Código", :with => -1234
     fill_in "Nome", :with => ""
@@ -33,6 +36,7 @@ feature "Criar Ativos", %q{
     click_button 'Criar Ativo'
     puts current_path
     current_path.should match "/assets"
+    page.should have_content("Foram encontrados alguns erros, por favor dê uma olhada:")
   end
   
 end

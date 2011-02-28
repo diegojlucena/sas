@@ -20,6 +20,7 @@ describe "assets/edit.html.erb" do
       assert_select "input#asset_name", :name => "asset[name]"
       assert_select "input#asset_brand", :name => "asset[brand]"
       assert_select "input#asset_model", :name => "asset[model]"
+      assert_select "input#asset_model", :name => "asset[status]"
       assert_select "input#asset_buy_price", :name => "asset[buy_price]"
     end
   end

@@ -16,6 +16,7 @@ feature "Lista de Ativos", %q{
     page.should have_content(asset2.name)
     page.should have_content(asset2.code.to_s)
     page.should have_content(asset2.status)
+    page.should have_content("R$ 9,99")
   end
    
 end

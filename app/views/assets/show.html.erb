@@ -27,5 +27,5 @@
   <dt>Modelo</dt>
   <dd><%= @asset.model %></dd>
   <dt>Preço de Compra</dt>
-  <dd><%= @asset.buy_price %></dd>
+  <dd><%= number_to_currency @asset.buy_price %></dd>
 </dl>

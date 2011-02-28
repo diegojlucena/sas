@@ -13,6 +13,7 @@ Factory.define :valid_asset, :class => Asset do |a|
   a.brand "brand"
   a.model "model"
   a.status "Em manutenção"
+  a.buy_price 9.99
 end
 
 Factory.define :invalid_asset, :class => Asset do |a|

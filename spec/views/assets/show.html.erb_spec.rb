@@ -7,6 +7,7 @@ describe "assets/show.html.erb" do
       :name => "Name",
       :brand => "Brand",
       :model => "Model",
+      :status => "Em Uso",
       :buy_price => "9.99"
     ))
   end
@@ -21,6 +22,7 @@ describe "assets/show.html.erb" do
     rendered.should match(/Brand/)
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Model/)
+    rendered.should match(/Em Uso/)
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/9.99/)
   end

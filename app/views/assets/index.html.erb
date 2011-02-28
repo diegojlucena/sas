@@ -28,7 +28,7 @@
           <td><%= asset.status %></td>
           <td><%= asset.brand %></td>
           <td><%= asset.model %></td>
-          <td><%= asset.buy_price %></td>
+          <td><%= number_to_currency asset.buy_price %></td>
         </tr>
       <% end %>
     </tbody>
