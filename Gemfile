@@ -15,7 +15,8 @@ group :development, :test do
   gem 'steak',                    '1.1.0'  
   gem 'capybara',                 '0.4.1.2'
   gem 'launchy',                  '0.3.7'
-  gem 'factory_girl_rails',       '1.0.1'  
+  gem 'factory_girl_rails',       '1.0.1'
+  gem 'spork',                    '~> 0.9.0.rc4'
 
   # Other usual suspects:
   # gem 'delorean'
