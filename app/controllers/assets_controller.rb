@@ -1,5 +1,6 @@
 class AssetsController < ApplicationController
   respond_to :html
+  menu_item :assets
   
   def index
     @assets = Asset.all

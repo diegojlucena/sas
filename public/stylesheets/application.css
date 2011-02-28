@@ -68,7 +68,7 @@ section#side_bar nav#main_nav a {
 section#side_bar nav#main_nav a:hover {
   background-color: #eee;
   text-shadow: 0 1px 0 #fff; }
-section#side_bar nav#main_nav li.selected a {
+section#side_bar nav#main_nav li.current a {
   background-color: #e7e7e7;
   text-indent: 5px;
   font-weight: bold;

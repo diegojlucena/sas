@@ -1,5 +1,6 @@
 class LocationsController < ApplicationController
   respond_to :html
+  menu_item :locations
   
   def index
     @locations = Location.all

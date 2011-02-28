@@ -17,14 +17,10 @@
   </header>
   <section id="side_bar">
     <nav id="main_nav">
-      <ul>
-        <li>
-          <%= link_to "Ativos", assets_path %>
-        </li>
-        <li>
-          <%= link_to "Locais", locations_path %>
-        </li>
-      </ul>
+      <%= menu do |m| %>
+        <%= m.assets 'Ativos', assets_path  %>
+        <%= m.locations 'Locais', locations_path%>
+      <% end %>
     </nav>
   </section>
   <section id="app_body">

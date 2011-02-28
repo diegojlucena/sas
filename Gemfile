@@ -8,6 +8,7 @@ gem 'rails', '3.0.4'
 gem 'mysql2',       '0.2.6'
 gem 'simple_form',  '1.3.1'
 gem 'nested_set', :git => 'git://github.com/skyeagle/nested_set.git'
+gem "menu_builder", '>=0.2.2'
 
 group :development, :test do
   gem 'rspec',                    '2.5.0'
