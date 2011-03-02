@@ -19,6 +19,7 @@ group :development, :test do
   gem 'launchy',                  '0.3.7'
   gem 'factory_girl_rails',       '1.0.1'
   gem 'spork',                    '~> 0.9.0.rc4'
+  gem 'acts-as-taggable-on',      '2.0.6'
 
   # Other usual suspects:
   # gem 'delorean'

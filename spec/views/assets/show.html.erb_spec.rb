@@ -9,6 +9,7 @@ describe "assets/show.html.erb" do
       :model => "Model",
       :status => "Em Uso",
       :buy_price => "9.99",
+      :tag_list => "tag1, tag2",
       :location => stub_model(Location, :name => 'Root')
     ))
   end
@@ -27,5 +28,7 @@ describe "assets/show.html.erb" do
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/9.99/)
     rendered.should match(/Root/)
+    rendered.should match(/tag1/)
+    rendered.should match(/tag2/)
   end
 end

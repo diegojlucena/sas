@@ -18,6 +18,7 @@ feature "Criar Ativos", %q{
     fill_in "Valor", :with => 125.01
     choose "Em manutenção"
     select "root"
+    fill_in "Tags", :with => 'tag1, tag2'
     
     click_button 'Criar Ativo'
     

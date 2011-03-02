@@ -148,6 +148,7 @@ pt-BR:
   activerecord:
     models:
       asset: "Ativo"
+      location: "Local"
     attributes:
       _all:
         created_at: "Criado em"  
@@ -159,6 +160,10 @@ pt-BR:
         model: "Modelo"
         buy_price: "Valor de Compra"
         status: "Situação"
+        location_id: "Local"
+        tag_list: "Tags"
+      location:
+        name: "Nome"
     errors:
       template:
         header:

@@ -8,4 +8,8 @@ describe Asset do
   should_validate_inclusion_of :status, :in => ['Danificado','Em uso','Em manutenção']
   
   should_belong_to :location
+  
+  it "deve responder ao metodo tagged_with" do
+    Asset.should respond_to(:tagged_with)
+  end
 end
