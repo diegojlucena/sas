@@ -8,7 +8,7 @@
     <%= f.input :brand %>
     <%= f.input :model %>
     <%= f.input :buy_price %>
-    <%= f.input :location_id, :collection => nested_set_options(Location, @asset.location) {|i, level| "#{'-' * level} #{i.name}" } %>
+    <%= f.input :location_id, :collection => nested_set_options(Location) {|i, level| "#{'-' * level} #{i.name}" } %>
     <%= f.input :tag_list %>
   </ol>
 

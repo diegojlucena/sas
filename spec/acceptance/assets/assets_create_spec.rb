@@ -6,8 +6,11 @@ feature "Criar Ativos", %q{
   Eu quero ser capaz de criar de ativos
 } do
   
-  scenario "validos" do
+  background do
     Factory.create(:root_location)
+  end
+  
+  scenario "validos" do
     visit assets_path
     click_link "Novo Ativo"
     
@@ -17,7 +20,7 @@ feature "Criar Ativos", %q{
     fill_in "Modelo", :with => "digital 5024"
     fill_in "Valor", :with => 125.01
     choose "Em manutenção"
-    select "root"
+    select "root", :from => "Local"
     fill_in "Tags", :with => 'tag1, tag2'
     
     click_button 'Criar Ativo'

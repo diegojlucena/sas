@@ -15,9 +15,8 @@
         <th>Código</th>
         <th>Nome</th>
         <th>Situação</th>
-        <th>Marca</th>
-        <th>Modelo</th>
-        <th>Preço</th>
+        <th>Tags</th>
+        <th colspan='2'>Ações</th>
       </tr>
     </thead>
     <tbody>
@@ -26,9 +25,9 @@
           <td><%=link_to asset.code, asset %></td>
           <td><%= asset.name %></td>
           <td><%= asset.status %></td>
-          <td><%= asset.brand %></td>
-          <td><%= asset.model %></td>
-          <td><%= number_to_currency asset.buy_price %></td>
+          <td><%= asset.tag_list %></td>
+          <td class="edit"><%= link_to "Editar", edit_asset_path(asset) %></td>
+          <td class="destroy"><%= link_to("Apagar", asset , :method => :delete, :confirm => "Tem certeza?") %></td>
         </tr>
       <% end %>
     </tbody>

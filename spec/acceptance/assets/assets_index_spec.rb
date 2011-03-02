@@ -13,10 +13,11 @@ feature "Lista de Ativos", %q{
     page.should have_content(asset.name)
     page.should have_content(asset.code.to_s)
     page.should have_content(asset.status)
+    page.should have_content(asset.tag_list.to_s)
     page.should have_content(asset2.name)
     page.should have_content(asset2.code.to_s)
     page.should have_content(asset2.status)
-    page.should have_content("R$ 9,99")
+    page.should have_content(asset2.tag_list.to_s)
   end
    
 end
