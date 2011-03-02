@@ -28,4 +28,6 @@
   <dd><%= @asset.model %></dd>
   <dt>Preço de Compra</dt>
   <dd><%= number_to_currency @asset.buy_price %></dd>
+  <dt>Local</dt>
+  <dd><%= @asset.location.name %></dd>
 </dl>

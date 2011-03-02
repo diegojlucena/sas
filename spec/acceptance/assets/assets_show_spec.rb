@@ -13,6 +13,7 @@ feature "Exibir ativo", %q{
     page.should have_content(asset.code.to_s)
     page.should have_content(asset.brand)
     page.should have_content(asset.model)
+    page.should have_content(asset.location.name)
   end
   
 end

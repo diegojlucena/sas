@@ -2,4 +2,6 @@
 class Location < ActiveRecord::Base
   acts_as_nested_set
   validates :name, :presence => true, :uniqueness => {:scope => :parent_id, :allow_nil => true}
+  
+  has_many :assets
 end

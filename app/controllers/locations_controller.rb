@@ -20,13 +20,13 @@ class LocationsController < ApplicationController
   def create
     @location = Location.new(params[:location])
     flash[:notice] = 'Local criado com sucesso.' if @location.save
-    respond_with(@location)
+    respond_with(@location, :location => locations_url)
   end
 
   def update
     @location = Location.find(params[:id])
     flash[:notice] = 'Local atualizado com sucesso.' if @location.update_attributes(params[:location])
-    respond_with(@location)
+    respond_with(@location, :location => locations_url)
   end
 
   def destroy

@@ -13,6 +13,7 @@ feature "Novos de Ativos", %q{
     page.should have_field("Marca")
     page.should have_field("Modelo")
     page.should have_field("Valor")
+    page.should have_select("Location")
     page.should have_button("Criar Ativo")
   end
    

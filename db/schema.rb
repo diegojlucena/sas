@@ -10,17 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110228154654) do
+ActiveRecord::Schema.define(:version => 20110228191613) do
 
   create_table "assets", :force => true do |t|
     t.integer  "code"
     t.string   "name"
     t.string   "brand"
     t.string   "model"
-    t.decimal  "buy_price",  :precision => 8, :scale => 2
-    t.string   "status",                                   :default => "Em uso"
+    t.decimal  "buy_price",   :precision => 8, :scale => 2
+    t.string   "status",                                    :default => "Em uso"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "location_id"
   end
 
   create_table "locations", :force => true do |t|

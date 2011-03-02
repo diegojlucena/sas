@@ -6,7 +6,8 @@ feature "Criar Ativos", %q{
   Eu quero ser capaz de criar de ativos
 } do
   
-  scenario "usuário valido" do
+  scenario "validos" do
+    Factory.create(:root_location)
     visit assets_path
     click_link "Novo Ativo"
     
@@ -15,7 +16,8 @@ feature "Criar Ativos", %q{
     fill_in "Marca", :with => "vivicam"
     fill_in "Modelo", :with => "digital 5024"
     fill_in "Valor", :with => 125.01
-    choose "Em manutenção" 
+    choose "Em manutenção"
+    select "root"
     
     click_button 'Criar Ativo'
     
@@ -23,7 +25,7 @@ feature "Criar Ativos", %q{
     page.should have_content("Ativo criado com sucesso.")
   end
   
-  scenario "usuário inválido" do
+  scenario "inválidos" do
     visit assets_path
     click_link "Novo Ativo"
     
@@ -34,7 +36,6 @@ feature "Criar Ativos", %q{
     fill_in "Valor", :with => -125.01
     
     click_button 'Criar Ativo'
-    puts current_path
     current_path.should match "/assets"
     page.should have_content("Foram encontrados alguns erros, por favor dê uma olhada:")
   end

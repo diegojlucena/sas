@@ -41,7 +41,7 @@ describe LocationsController do
       it "redirects to the created location" do
         Location.stub(:new) { mock_location(:save => true) }
         post :create, :location => {}
-        response.should redirect_to(location_url(mock_location))
+        response.should redirect_to(locations_url)
       end
     end
 
@@ -77,7 +77,7 @@ describe LocationsController do
       it "redirects to the location" do
         Location.stub(:find) { mock_location(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(location_url(mock_location))
+        response.should redirect_to(locations_url)
       end
     end
 
