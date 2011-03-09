@@ -16,6 +16,10 @@ class AssetsController < ApplicationController
     @asset = Asset.new
     respond_with(@asset)
   end
+  
+  def new_multiple
+    
+  end
 
   def edit
     @asset = Asset.find(params[:id])
@@ -26,6 +30,10 @@ class AssetsController < ApplicationController
     @asset = Asset.new(params[:asset])
     flash[:notice] = 'Ativo criado com sucesso.' if @asset.save
     respond_with(@asset)
+  end
+  
+  def create_multiple
+    
   end
 
   def update

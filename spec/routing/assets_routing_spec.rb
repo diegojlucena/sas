@@ -10,6 +10,10 @@ describe AssetsController do
     it "recognizes and generates #new" do
       { :get => "/assets/new" }.should route_to(:controller => "assets", :action => "new")
     end
+    
+    it "recognizes and generates #new_multiple" do
+      { :get => "/assets/new_multiple" }.should route_to(:controller => "assets", :action => "new_multiple")
+    end
 
     it "recognizes and generates #show" do
       { :get => "/assets/1" }.should route_to(:controller => "assets", :action => "show", :id => "1")
@@ -21,6 +25,10 @@ describe AssetsController do
 
     it "recognizes and generates #create" do
       { :post => "/assets" }.should route_to(:controller => "assets", :action => "create")
+    end
+    
+    it "recognizes and generates #create_multiple" do
+      { :post => "/assets/create_multiple" }.should route_to(:controller => "assets", :action => "create_multiple")
     end
 
     it "recognizes and generates #update" do
