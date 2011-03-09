@@ -11,7 +11,8 @@ Spork.prefork do
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
   require 'remarkable/active_record'
-  
+   
+
   RSpec.configure do |config|
     # == Mock Framework
     #

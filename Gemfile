@@ -20,7 +20,8 @@ group :development, :test do
   gem 'factory_girl_rails',       '1.0.1'
   gem 'spork',                    '~> 0.9.0.rc4'
   gem 'acts-as-taggable-on',      '2.0.6'
-
+  gem 'ZenTest',                  '4.5.0'
+  #gem 'test_notifier',            '0.3.6'
   # Other usual suspects:
   # gem 'delorean'
   # gem 'database_cleaner'
