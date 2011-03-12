@@ -23,7 +23,7 @@ describe "assets/new.html.erb" do
       assert_select "input#asset_model", :name => "asset[model]"
       assert_select "input#asset_status_danificado", :name => "asset[status]"
       assert_select "input#asset_status_em_uso", :name => "asset[status]"
-      assert_select "input#asset_status_em_manuteno", :name => "asset[status]" #em manutenção 'çã' é retirado do id 
+      assert_select "input#asset_status_em_manutenção", :name => "asset[status]" 
       assert_select "select#asset_location_id", :name => "asset[location_id]"
       assert_select "input#asset_buy_price", :name => "asset[buy_price]"
       assert_select "input#asset_tag_list", :name => "asset[tag_list]"
